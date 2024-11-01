@@ -12,8 +12,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production ./js/script.js -o ./main.js",
-    "dev": "webpack --mode development --watch ./js/script.js -o ./main.js"
+    "build": "webpack --mode production ./js/script.js -o main.js",
+    "dev": "webpack --mode development --watch ./js/script.js -o main.js"
   },
   "author": "",
   "license": "ISC",

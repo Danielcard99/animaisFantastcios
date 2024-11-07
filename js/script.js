@@ -5,10 +5,10 @@ import TabNav from "../modules/tabNav.js";
 import Modal from "../modules/modal.js";
 import ToolTip from "../modules/tooltip.js";
 import DropDownMenu from "../modules/dropdown-menu.js";
-import initMenuMobile from "../modules/menu-mobile.js";
 import initFuncionamento from "../modules/funcionamento.js";
 import fetchAnimais from "../modules/fetch-animais.js";
 import fetchBitcoin from "../modules/fetch-bitcoin.js";
+import MenuMobile from "../modules/menu-mobile.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -38,7 +38,9 @@ scrollAnima.init();
 const dropDownMenu = new DropDownMenu("[data-dropdown]");
 dropDownMenu.init();
 
-initMenuMobile();
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();
+
 initFuncionamento();
 
 fetchAnimais("../animaisApi.json", ".numeros-grid");

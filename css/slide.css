@@ -48,7 +48,6 @@
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 2px;
   cursor: pointer;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
